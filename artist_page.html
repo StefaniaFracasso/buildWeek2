@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artist Page Spotify</title>
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/spotify-icon-18.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body class=" bg-dark text-light vh-100">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- ----------------------------------------------------------PARTE SINISTRA---------------------------------------------------------- -->
+            <div class="col d-none d-sm-block d-sm-none d-md-block col.md-3 col-2 col-md-3 col-lg-2 bg-black pt-2 pe-0"
+                id="left">
+                <div class="" id="fixedList">
+                    <ul class="list-unstyled ms-2">
+                        <li class="mb-2"><a href="" class="text-decoration-none text-light"><i
+                                    class="bi bi-three-dots"></i></a></li>
+                        <li class="mb-2"><a href="home_page.html" class="text-decoration-none text-light"><i
+                                    class="bi bi-house-door-fill me-3"></i>Home</a></li>
+                        <li class="mb-2"><a href="search_page.html" class="text-decoration-none text-light"><i
+                                    class="bi bi-search me-3"></i>Cerca</a></li>
+                        <li class=""><a href="" class="text-decoration-none text-light"><i
+                                    class="bi bi-collection me-3"></i>La tua Libreria</a></li>
+                    </ul>
+                    <br>
+                    <ul class="list-unstyled ms-2">
+                        <li class="mb-3"><a href="" class="text-decoration-none text-light"><i
+                                    class="bi bi-plus me-3 text-dark bg-light rounded p-1"></i>Crea playlist</a></li>
+                        <li class="mb-3"><a href="" class="text-decoration-none text-light"><i
+                                    class="bi bi-suit-heart-fill me-3 bg-danger rounded p-1"></i>Brani che ti
+                                piacciono</a></li>
+                        <li><a href="" class="text-decoration-none text-light"><i
+                                    class="bi bi-bookmark-fill me-3 bg-success rounded p-1"></i>I tuoi episodi</a></li>
+                    </ul>
+                </div>
+
+                <hr class="m-2">
+
+                <div class="scroller ms-2" id="scrollList">
+                    <ul class="list-unstyled lh-1">
+                        <li class="mb-3">early stage emily syndrome (sett-ott 2022)</li>
+                        <li class="mb-3">Re The Young</li>
+                        <li class="mb-3">"..." cit. Kimko (lug-ago 2022)</li>
+                        <li class="mb-3">saggio vibes &#128131 &#129648</li>
+                        <li class="mb-3">main character energy (mag-giu 2022)</li>
+                        <li class="mb-3">that fucking mood &#128298 &#128128</li>
+                        <li class="mb-3">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
+                        <li class="mb-3">An Emily Winchester kind of mood &#128298 &#128405</li>
+                        <li class="mb-3">landing page (mar-apr 2022)</li>
+                        <li class="mb-3">2021 lol</li>
+                        <li class="mb-3">cosa cazzo vuol dire questa affermazione</li>
+                        <li class="mb-3">honey and glass (nov-dic 2021)</li>
+                        <li class="mb-3">(Revenge) Training Arc &#129421</li>
+                        <li class="mb-3">Lidia &#129309 Emily</li>
+                        <li class="mb-3">minecraft e nintendo switch (sep-oct 2021)</li>
+                        <li class="mb-3">silvano d'orba? I hardly know her (lug - ago 2021)</li>
+                        <li class="mb-3">Culo 2021</li>
+                        <li class="mb-3">Frah Quintale Mix</li>
+                        <li class="mb-3">Francesco Guccini Mix</li>
+                        <li class="mb-3">early stage emily syndrome (sett-ott 2022)</li>
+                        <li class="mb-3">Re The Young</li>
+                        <li class="mb-3">"..." cit. Kimko (lug-ago 2022)</li>
+                        <li class="mb-3">saggio vibes &#128131 &#129648</li>
+                        <li class="mb-3">main character energy (mag-giu 2022)</li>
+                        <li class="mb-3">that fucking mood &#128298 &#128128</li>
+                        <li class="mb-3">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
+                        <li class="mb-3">An Emily Winchester kind of mood &#128298 &#128405</li>
+                        <li class="mb-3">landing page (mar-apr 2022)</li>
+                        <li class="mb-3">2021 lol</li>
+                        <li class="mb-3">cosa cazzo vuol dire questa affermazione</li>
+                        <li class="mb-3">honey and glass (nov-dic 2021)</li>
+                        <li class="mb-3">(Revenge) Training Arc &#129421</li>
+                        <li class="mb-3">Lidia &#129309 Emily</li>
+                        <li class="mb-3">minecraft e nintendo switch (sep-oct 2021)</li>
+                        <li class="mb-3">silvano d'orba? I hardly know her (lug - ago 2021)</li>
+                        <li class="mb-3">Culo 2021</li>
+                        <li class="mb-3">Frah Quintale Mix</li>
+                        <li class="mb-3">ciao</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ----------------------------------------------------------PARTE CENTRALE---------------------------------------------------------- -->
+            <div class="col col-12 col-md-9 col-lg-8 p-0" id="middle">
+                <div
+                    class="user__Bar user__BarAlbumPage bg-dark d-flex justify-content-between align-items-center py-2 sticky-top d-none d-sm-flex">
+                    <div class="arrow__Btns ms-3">
+                        <a href="./home_page.html"><button type="button"
+                                class="bg-dark text-white border-0 rounded-circle"><i
+                                    class="bi bi-chevron-left"></i></button></a>
+                        <button type="button" class="bg-dark text-white border-0 rounded-circle"><i
+                                class="bi bi-chevron-right"></i></button>
+                    </div>
+
+                    <div class="dropdown d-flex align-items-center me-2">
+                        <button
+                            class="btn btn-sm btn-sm-secondary dropdown-toggle btn-rounded p-3 d-flex align-items-center"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://picsum.photos/200" class="rounded-circle me-2 d-none d-md-inline"
+                                alt="Immagine" style="width: 25px; height: 25px" />
+                            Team 6 Epicode
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container container__cont">
+                    <div class="row flex-column artist__body">
+                        <div class="col d-flex flex-column justify-content-end" id="titoloArtista">
+                        </div>
+                        <div class="col">
+                            <div class="my-4">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="green"
+                                        class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                    </svg></a>
+                                <p class="border d-inline py-2 px-3 mx-4">FOLLOWING</p>
+                                <div class="btn-group">
+                                    <button class="bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <span class="menu_pulsanti">&middot;&middot;&middot;</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-12 col-lg-8">
+                                    <h3 class="mb-4">Popolari</h3>
+                                    <ol id="listaCanzoni">
+
+                                    </ol>
+                                    <p class="my-4"><strong>VISUALIZZA ALTRO</strong></p>
+
+                                </div>
+
+
+                                <div class="col-12 col-lg-4">
+                                    <h3 class="mb-4 fs-5">Brani che ti piacciono</h3>
+                                    <div class="row mb-4" id="likeArtista">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Scopri la discografia dell'artista</h3>
+                        <div class="row" id="listaAlbum">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------PARTE DESTRA---------------------------------------------------------- -->
+            <div class="col d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block col-2 bg-black pt-2" id="right">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bolder">Attività amici</p>
+                    <div>
+                        <a href="" class="text-decoration-none text-secondary"><i class="bi bi-person-add me-2"></i></a>
+                        <a href="" class="text-decoration-none text-secondary"><i class="bi bi-x-lg"></i></i></a>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between text-secondary mb-3">
+                    <img width="20%" height="20%" class="me-1 rounded-circle"
+                        src="assets/img/demon_slayer_crop1670381464651.jpg_2027785412.webp" alt="">
+                    <div>
+                        <p class="attivitaAmiciNome m-0">Charlie Hookham</p>
+                        <p class="attivitaAmici m-0">In camera &#8226 Yumi Zouma</p>
+                        <p class="attivitaAmici m-0"><i class="bi bi-vinyl me-2"></i>EP III</p>
+                    </div>
+                    <p class="attivitaAmiciOre m-0">4 ore</p>
+                </div>
+
+                <div class="d-flex justify-content-between text-secondary mb-3">
+                    <img width="20%" height="20%" class="me-1 rounded-circle" src="assets/img/goku3.jpg" alt="">
+                    <div>
+                        <p class="attivitaAmiciNome m-0">Lightdark02</p>
+                        <p class="attivitaAmici m-0">Aimed to Kill &#8226 Yumi Zouma</p>
+                        <p class="attivitaAmici m-0"><i class="bi bi-vinyl me-2"></i>Aimed to Kill</p>
+                    </div>
+                    <p class="attivitaAmiciOre m-0">4 ore</p>
+                </div>
+
+                <div class="d-flex justify-content-between text-secondary mb-3">
+                    <img width="20%" height="20%" class="me-1 rounded-circle" src="assets/img/one pice.jpg" alt="">
+                    <div>
+                        <p class="attivitaAmiciNome m-0">Valerio Rossi</p>
+                        <p class="attivitaAmici m-0">New Kings &#8226 Sleeping Wolf</p>
+                        <p class="attivitaAmici m-0"><i class="bi bi-music-note-beamed me-2"></i>Twint Mood</p>
+                    </div>
+                    <p class="attivitaAmiciOre m-0">4 ore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick=""></button>
+    <!-- ----------------------------------------------------------PLAYER---------------------------------------------------------- -->
+    <footer>
+        <!-- player bar schermi grandi-->
+        <div class="container-fluid fixed-bottom bg-dark text-light border-top border-light d-none d-sm-block">
+            <div class="row justify-content-between p-1">
+                <div class="col col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start"
+                    id="titoloFooter1">
+                    <!-- <img src="http://placekitten.com/50/50" alt="Album Cover" class="me-3">
+                    <div>
+                        <h6 class="mb-0" id="titoloFooter1"></h6>
+                        <p class="mb-0 small" id="artistaFooter1">Nome dell'artista</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-heart fs-5 ps-4"></i>
+                    </div> -->
+                </div>
+                <div class="col col-12 col-md-4 d-flex flex-column align-items-center">
+                    <div>
+                        <i class="bi bi-shuffle fs-4 px-2"></i>
+                        <i class="bi bi-skip-backward fs-4  px-2"></i>
+                        <i class="bi bi-play-circle fs-1  px-2" onclick="startAndStop()"></i>
+                        <i class="bi bi-skip-forward fs-4  px-2"></i>
+                        <i class="bi bi-repeat fs-4  px-2"></i>
+                    </div>
+                </div>
+                <div
+                    class="col col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+
+                    <div class="volume-bar d-flex justify-content-center align-items-center me-3">
+                        <i class="bi bi-volume-up fs-3"></i>
+                        <input type="range" min="0" max="100" value="50" id="volume-control">
+                    </div>
+                    <i class="bi bi-fullscreen fs-5 px-1"></i>
+                </div>
+            </div>
+        </div>
+        <!-- end of player bar schermi grandi -->
+        <!-- start of player bar schermi piccoli -->
+        <div class="container row d-sm-none bg-dark text-light mx-1 rounded-3 fixed-bottom" id="player-small">
+            <div class="d-flex justify-content-between align-items-center p-1 ms-2">
+                <div>
+                    <marquee class=" small mb-0 text-truncate d-flex me-5" id="footerMobile"></marquee>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-pc-display fs-5 px-1"></i>
+                    <i class="bi bi-heart fs-5 px-1"></i>
+                    <i class="bi bi-play-fill fs-5 px-1" onclick="startAndStop()"></i>
+                </div>
+            </div>
+        </div>
+        <!-- end of player bar schermi piccoli -->
+
+        <!-- footer_smartphone -->
+        <div id="footer_smartphone">
+            <ul class="primi_tre d-sm-none list-unstyled d-flex justify-content-around">
+                <li><a href="home_page.html"><i class="bi bi-house-fill fs-1"></i>Home</a></li>
+
+                <li><a href="./search_page.html"><i class="bi bi-search fs-1"></i>Cerca</a></li>
+
+                <li><a href="#"><i class="bi bi-collection-fill fs-1"></i>La tua libreria</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./assets/JS/artistPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

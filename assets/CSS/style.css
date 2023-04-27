@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+#left {
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+#fixedList {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------------scrollbar sinistra---------------------------------------------------------- */
+.scroller {
+    height: 55vh;
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4d4d4dad;
+}
+
+/* ----------------------------------------------------------scrollbar middle---------------------------------------------------------- */
+#middle {
+    height: 100vh;
+    overflow: auto;
+}
+
+#section_2 {
+    padding-bottom: 100px !important;
+}
+
+/* ----------------------------------------------------------parte centrale---------------------------------------------------------- */
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+
+main #section_1 .arrow {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.btn-rounded {
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn-rounded img {
+    margin-right: 0;
+    margin-bottom: -0.15em;
+}
+
+
+
+main #section_1 p {
+    font-size: 1.2rem;
+}
+
+main #section_1>p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+main #section_1 .album_in_evidenza {
+    border-radius: 5px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #section_1 .album_in_evidenza img {
+    max-height: 200px;
+    display: flex;
+    align-self: center;
+    padding: 2px;
+}
+
+main #section_1 .album_in_evidenza .img_testi {
+    display: flex;
+}
+
+.testi p:first-child {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.testi p:nth-child(2) {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.pulsanti {
+    padding: 10px 0px;
+}
+
+.menu_pulsanti {
+    font-size: 45px;
+    font-weight: 10px;
+    color: white;
+
+}
+
+.pulsante_play,
+.pulsante_salva {
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.pulsante_play {
+    margin-right: 5px;
+    color: #000;
+    background-color: #1ed760;
+}
+
+.pulsante_salva {
+    margin-right: 10px;
+    border: 1px solid #4f4f4f;
+    color: white;
+}
+
+.btn-sm {
+    height: 25px;
+    padding: 0.40rem 0rem;
+    font-size: 0.875rem;
+}
+
+.album_in_evidenza .testi .pulsanti {
+    padding: 3px;
+    font-size: 1.2rem;
+    letter-spacing: 1.7px;
+}
+
+.span_autore_singolo_in_evidenza {
+    font-size: 12px !important;
+}
+
+.span_autore_singolo_in_evidenza span {
+    color: white !important;
+    text-transform: none !important;
+    font-size: 12px !important;
+}
+
+.album_in_evidenza .nascondi {
+    padding: 20px 10px;
+    text-transform: uppercase;
+    color: #686868;
+    font-size: 0.7rem;
+}
+
+.nascondi {
+    float: right;
+}
+
+.preferiti {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preferiti .tre_in_alto,
+.preferiti .tre_in_basso {
+    display: flex;
+}
+
+.preferiti .preferito {
+    width: 32%;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+main #section_1 .preferiti .preferito img {
+    width: 25%;
+    max-width: 100px;
+    padding: 2px;
+}
+
+main #section_1 .preferiti .preferito .testi {
+    padding: 5px 10px;
+}
+
+main #section_2 .testi {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testi p {
+    font-weight: 700;
+}
+
+.testi span {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #686868;
+}
+
+.altri_preferiti {
+    display: flex;
+}
+
+.altro_preferito {
+    width: 20%;
+    background-color: #171717;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.altro_preferito .riga-sotto {
+    display: none;
+}
+
+.altro_preferito img {
+    width: 100%;
+}
+
+.altro_preferito p,
+.altro_preferito span {
+    font-size: 0.8rem;
+}
+
+.altro_preferito span {
+    color: #686868;
+}
+
+#saluto {
+    padding-left: 0.9em;
+    margin-bottom: 0;
+    padding-top: 1em;
+    font-weight: 700;
+}
+
+.pulsanti span {
+    font-size: 3em;
+}
+
+
+.titolo_album_in_evidenza {
+    font-size: 10px !important;
+}
+
+.transform:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+#searchSection {
+    padding-bottom: 100px;
+}
+
+/* ----------------------------------------------------------barra laterale destra---------------------------------------------------------- */
+.attivitaAmiciNome {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.attivitaAmici {
+    font-size: 11px;
+}
+
+.attivitaAmiciOre {
+    font-size: 10px;
+}
+
+/* ----------------------------------------------------------Cards rettangolari fisse---------------------------------------------------------- */
+/*.gallery-vertical {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }*/
+
+.gallery-card-vertical {
+    height: 50px;
+    width: 300px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(112, 112, 112, 0.226);
+    margin: 8px;
+}
+
+.gallery-card-vertical-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+/* ----------------------------------------------------------CARDS effetto hoover---------------------------------------------------------- */
+.cardsHome .item {
+    /*min-width: 140px;
+     width: 160px;*/
+    height: 100%;
+    padding: 10px;
+    /*o 15*/
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.cardsHome .item:hover {
+    background-color: #252525;
+}
+
+.cardsHome .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.cardsHome .item .play {
+    position: relative;
+}
+
+.cardsHome .item .play .bi-play-fill {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 0em 0.25em;
+    background-color: #1db954;
+    font-size: 1.5em;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.cardsHome .item:hover .play .bi-play-fill {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.cardsHome .item h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.cardsHome .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#listaAlbum {
+    margin-bottom: 100px;
+}
+
+/* ----------------------------------------------------------player---------------------------------------------------------- */
+i {
+    cursor: pointer;
+}
+
+.playbar {
+    color: white;
+}
+
+.playbar {
+    width: 20em;
+    margin: 0 0.5em;
+    border: solid 0.12em lightgrey;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .playbar {
+        width: 10em;
+    }
+}
+
+#player-small {
+    bottom: 4em;
+    width: 97%;
+    /*controlla*/
+    height: auto;
+    margin: 0%;
+}
+
+
+/* ----------------------------------------------------------album page---------------------------------------------------------- */
+.middleAlbumPage {
+    width: auto;
+    /*background-color: #caae48;*/
+}
+
+.album__body p img {
+    width: 20px;
+    height: 20px;
+    border-radius: 80px;
+}
+
+.artist__info {
+    font-size: 0.5rem;
+}
+
+.user__Bar img,
+.artist__info img {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow__Btns i {
+    font-size: 14px;
+    padding: 0;
+}
+
+.container-fluid .bi-play-circle {
+    font-size: 40px;
+}
+
+.container-fluid {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3967517401392111) 0%, rgba(0, 0, 0, 1) 25%);
+}
+
+.bi-play-circle-fill {
+    width: 45px;
+}
+
+.div__container {
+    width: 93%;
+}
+
+.song__time {
+    margin-left: -12px;
+}
+
+.art__inf {
+    font-size: 0.7rem !important;
+}
+
+/*
+.album__body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+
+@media only screen and (max-width: 575px) {
+
+    .song__title,
+    .song__ripro,
+    .bi-clock,
+    .bi-play-circle-fill,
+    .ripro__numb,
+    .song__time,
+    .album__album,
+    .anno__ril,
+    .nr__canzoni,
+    .song__index,
+    .three__dots {
+        display: none;
+    }
+
+    .artist__title {
+        width: 300px !important;
+        font-size: 1.2rem;
+        margin-left: -20px !important;
+    }
+
+    .album__body {
+        flex-direction: column;
+    }
+
+    .artist__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .album__info {
+        margin-top: -30px !important;
+    }
+
+    .art__inf {
+        font-size: 1.2rem !important;
+        margin-top: 10px !important;
+        margin-left: -7px;
+    }
+
+    .album__annoR {
+        font-size: 1rem;
+    }
+
+    .artist__title p:nth-child(1) {
+        opacity: 100% !important;
+    }
+
+    .div__container {
+        margin-bottom: 50px;
+    }
+
+    /*modifiche aggiunte*/
+    .p_mobile {
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-bottom: 0.5em;
+        font-size: 15px;
+    }
+
+    .p_mobile .Podcast {
+        padding-left: 3.5em;
+    }
+
+    .gallery-card-vertical {
+        height: 50px;
+        width: 200px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(112, 112, 112, 0.226);
+        margin: 8px;
+        border-radius: 10px;
+    }
+
+    .gallery-card-vertical-img {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+    main #section_1 .album_in_evidenza .img_testi {
+        display: none;
+    }
+
+    main #section_1 .album_in_evidenza {
+        display: none;
+    }
+
+    .contenitore_saluto_icone {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenitore_saluto_icone .contenitore_saluto_icone--icone {
+        display: flex;
+        align-items: center;
+        margin-top: 0.9em;
+        margin-right: 0.6em;
+
+    }
+
+    .contenitore_saluto_icone .contenitore_saluto_icone--icone ion-icon {
+        margin-left: 10px;
+    }
+
+    .testi p:first-child {
+        padding-left: 1em;
+    }
+
+    #footer_smartphone {
+        color: #fff;
+        background: linear-gradient(to top, #000000, #060606, #000000, #060606af);
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        margin-bottom: -1px;
+        margin-top: 1px;
+    }
+
+    .primi_tre {
+        display: flex;
+        padding: 4px;
+    }
+
+    .primi_tre li a {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.6;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        font-size: 12px;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    #footer_smartphone ul {
+        margin: 0;
+    }
+
+    #footer_smartphone ul li {
+        color: #fff;
+        opacity: 0.6;
+        transition: 0.5s ease-in-out;
+        font-size: 12px;
+        margin: 0;
+
+
+
+    }
+
+    #footer_smartphone ul>li:hover {
+        opacity: 1;
+        transform: scale(1.1) translateX(1px);
+    }
+
+
+    .cardsHome .item img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .containerCards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*
+@media only screen and (min-width: 768px) and (max-width: 874px) {
+    .shuf__play {
+        margin-left: 100px !important;
+    }
+
+    .three__dots {
+        margin-right: 5px;
+    }
+
+}*/
+    .item {
+        min-width: 140px;
+        width: 97%;
+        padding: 15px;
+        background-color: #181818;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all ease 0.4s;
+    }
+
+    .item .play .bi-play-fill {
+        position: absolute;
+        right: 10px;
+        top: -85px;
+        padding: 0em 0.25em;
+        background-color: #1db954;
+        font-size: 1.5em;
+        border-radius: 100%;
+        opacity: 0;
+        transition: all ease 0.4s;
+    }
+
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .gallery-card-vertical {
+        height: 50px;
+        width: 130px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(112, 112, 112, 0.226);
+        margin: 8px;
+        border-radius: 10px;
+    }
+
+    .contenitore_saluto_icone {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #listaCanzoni {
+        font-size: 0.7rem;
+    }
+}
+
+/*  margin bottom album page e artist */
+#listaAlbum,
+#allSongs {
+    margin-bottom: 100px;
+}
+
+#sfoglia {
+    padding-bottom: 100px;
+}
+
+.artist__body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3967517401392111) 0%, rgba(0, 0, 0, 1) 25%);
+
+}
